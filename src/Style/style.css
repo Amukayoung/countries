@@ -1,0 +1,24 @@
+.navBarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 75px;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    bottom:25px;
+    padding-left:75px;
+    padding-right:75px;
+    box-shadow: 3px 3px 0px 0px rgba(48, 0, 0, 0.1);
+}
+.navBarContainer h3{
+    padding-top: 20px;
+}
+.darkModeContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.darkModeContainer p{
+    margin-top: 20px;
+}
