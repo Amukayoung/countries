@@ -1,33 +1,83 @@
-import React from 'react';
-import { useState } from 'react';
-import { Box,FormControl,InputLabel,Select,MenuItem } from '@mui/material';
+import * as React from 'react';
+import { useTheme } from '@mui/material/styles';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
-const SelectRegions = () => {
-    const [regions, setRegions] = useState('');
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250,
+    },
+  },
+};
 
-    const handleChange = (event) => {
-      setRegions(event.target.value);
-    };
-  return (
-    <Box sx={{ width:300,marginRight:"75px",height:"50px" }}>
-    <FormControl fullWidth >
-      <InputLabel id="filter-regions">Filter by regions</InputLabel>
-      <Select
-        labelId="filter-regions"
-        id="filter-regions"
-        value={regions}
-        label="Filter by regions"
-        onChange={handleChange}
-      >
-        <MenuItem value={10}>Africa</MenuItem>
-        <MenuItem value={20}>America</MenuItem>
-        <MenuItem value={30}>Asia</MenuItem>
-        <MenuItem value={40}>Europe</MenuItem>
-        <MenuItem value={50}>Oceania</MenuItem>
-      </Select>
-    </FormControl>
-  </Box>
-  )
+const names = [
+  'Africa',
+  'America',
+  'Asia',
+  'Europe',
+  'Oceania'
+  
+];
+
+function getStyles(name, personName, theme) {
+  return {
+    fontWeight:
+      personName.indexOf(name) === -1
+        ? theme.typography.fontWeightRegular
+        : theme.typography.fontWeightMedium,
+  };
 }
 
-export default SelectRegions
+export default function SelectRegions() {
+  const theme = useTheme();
+  const [personName, setPersonName] = React.useState([]);
+
+  const handleChange = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setPersonName(
+      typeof value === 'string' ? value.split(',') : value,
+    );
+  };
+
+  return (
+    <div>
+      <FormControl sx={{ m: 1, width: 300, mt: 3,marginRight:"75px",backgroundColor:"#ffffff" }}>
+        <Select
+          multiple
+          displayEmpty
+          value={personName}
+          onChange={handleChange}
+          input={<OutlinedInput />}
+          renderValue={(selected) => {
+            if (selected.length === 0) {
+              return "Filter by Region";
+            }
+
+            return selected.join(', ');
+          }}
+          MenuProps={MenuProps}
+          // inputProps={{ 'aria-label': 'Without label' }}
+        >
+        
+          {names.map((name) => (
+            <MenuItem
+              key={name}
+              value={name}
+              style={getStyles(name, personName, theme)}
+            >
+              {name}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+    </div>
+  );
+}
