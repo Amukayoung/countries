@@ -1,16 +1,21 @@
-# Getting Started with Create React App
+# Country App - Assignment on Frontend Mentor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an assignment from Frontend Mentor URL: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
+that I have done in React Js a JavaScript frontend library.
 
-## Available Scripts
+##  Setting up the application
 
-In the project directory, you can run:
+# 1. Clone the repository or download the zip file
+# 2. Open in your IDE eg VSCode and run the command npm install. This will set up all the dependencies for you.
+      npm install
+# 3. After installing all the application dependencies, Run the command npm start to start the server at URL: http://localhost:3000/
+      npm start
+# 4. Enjoy the ride into the application
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshort
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+
+
+
 
