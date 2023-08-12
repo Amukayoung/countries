@@ -6,11 +6,10 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
 const MenuProps = {
   PaperProps: {
     style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      maxHeight: ITEM_HEIGHT * 4.5,
       width: 250,
     },
   },
@@ -51,6 +50,7 @@ export default function SelectRegions() {
     <div>
       <FormControl sx={{ m: 1, width: 300, mt: 3,marginRight:"75px",backgroundColor:"#ffffff" }}>
         <Select
+        size='small'
           multiple
           displayEmpty
           value={personName}
