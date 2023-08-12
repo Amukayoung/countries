@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <Paper
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300,marginLeft:"75px",height:"50px"}}
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300,marginLeft:"75px",height:"36px",marginTop:"24px"}}
     >
       <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
         <SearchIcon />
