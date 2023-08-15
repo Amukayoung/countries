@@ -58,6 +58,14 @@
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   }
 
+.detailsContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
   
   
   
