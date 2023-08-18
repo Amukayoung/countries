@@ -64,7 +64,6 @@ export default function SelectRegions() {
             return selected.join(', ');
           }}
           MenuProps={MenuProps}
-          // inputProps={{ 'aria-label': 'Without label' }}
         >
         
           {names.map((name) => (
