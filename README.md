@@ -15,7 +15,7 @@ that I have done in React Js a JavaScript frontend library.
 
       npm start
 
-## 4. Enjoy the ride into the application
+## 4. Enjoy finding the details about your country 
 
 ## Screenshort
 
