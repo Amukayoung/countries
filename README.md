@@ -11,7 +11,7 @@ that I have done in React Js a JavaScript frontend library.
 
       npm install
 
-## 3. After installing all the application dependencies, Run the command npm start to start the server at URL: http://localhost:3000/
+## 3. After installing all the application dependencies, Run the command npm start the server at URL: http://localhost:3000/
 
       npm start
 
