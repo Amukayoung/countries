@@ -15,7 +15,7 @@ that I have done in React Js a JavaScript frontend library.
 
       npm start
 
-## 4. Enjoy finding the details about your country 
+## 4. Enjoy finding the details on your country of choice
 
 ## Screenshort
 
