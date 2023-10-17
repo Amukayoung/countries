@@ -5,7 +5,7 @@ that I have done in React Js a JavaScript frontend library.
 
 # Setting up the App
 
-## 1. Clone the repository or download the zip file
+## 1. Clone the repository
 
 ## 2. Open the file in your IDE eg VSCode and run the command npm install. This will set up all the dependencies for you.
 
