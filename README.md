@@ -1,4 +1,4 @@
-# Country App - Assignment on Frontend Mentor
+# Country App - Frontend Mentor
 
 This is an assignment from Frontend Mentor URL: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
 that I have done in React Js a JavaScript frontend library.
